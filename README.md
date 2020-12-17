@@ -29,34 +29,3 @@ Your instructor will confirm that your branch was pushed successfully. Once all 
 At the end of the challenge, make your final commit and push your branch! Await your grade brave almighty student!
 
 
-## Instructors
-
-### Before the First Challenge
-
-Please check that all students are listed as collaborators with Write access. They should have accepted their invitations also.
-
-If any student does not appear and was not automatically added, please add them.
-
-### Before Every Challenge
-
-Please add the appropriate code challenge to this repo in its own directory. Ensure the .git folder is not in the code challenge folder. If you wish, you can remove previous code challenges from this repo.
-
-If you changed collaborator access to Read only, please update to Write.
-
-Also ensure that the only branch available is main/master. There should be no additional branches before a code challenge.
-
-Ask students to clone down the repo when ready and push a branch with their name using an empty or pointless commit. Once all branches appear, start the challenge.
-
-### After every challenge
-
-Pull down the repo and grade.
-
-Clean up/delete all branches except main/master.
-
-Put your grades in Canvas.
-
-Change collaborator access if you wish (optional).
-
-If you wish, remove the code challenge from the repo. If you keep old challenges in, please name the directories simply, e.g. "Phase-1-Code-Challenge-NameOfChallenge".
-
-Thank you for your hard work!
