@@ -89,7 +89,7 @@ Add controller actions and views necessary to show a form to associate a Pizza w
 
 After submitting, the user should be redirected to the selected Restaurant's show page.
 
-### 6. RestaurantPizza Validation
+### Advanced 6. RestaurantPizza Validation
 
 Add validations to the RestaurantPizza model so that each RestaurantPizza must have:
 
