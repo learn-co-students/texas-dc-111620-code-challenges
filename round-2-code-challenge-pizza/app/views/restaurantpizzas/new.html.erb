@@ -1,0 +1,14 @@
+<h1>Add Your Restaurant's Pizzas </h1>
+<hr><br>
+<%= form_for @restaurantpizza do |f| %>
+    
+    <br><br>
+    Pizza: <%= f.collection_select :pizza_id, Pizza.all, :id, :name %>
+    <br><br>
+    Restaurant: <%= f.collection_select :restaurant_id, Restaurant.all, :id, :name %>
+    <br><br>
+    Price: <%= f.number_field :price %>
+    <br><br>
+    <%= f.submit %>
+
+<% end %>

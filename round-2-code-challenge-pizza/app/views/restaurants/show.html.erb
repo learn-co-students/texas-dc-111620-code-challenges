@@ -1,0 +1,11 @@
+<h1> Selected Restaurant </h1>
+Name: <%=@restaurant.name%>
+<br>
+Address: <%=@restaurant.address%>
+<br>
+Pizza List:  <% @restaurant.pizzas.each do |pizza|%>
+    <li><%=link_to pizza.name, pizza_path(pizza)%> </li>
+    <% end %>
+
+<br>
+
