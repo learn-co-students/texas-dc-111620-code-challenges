@@ -1,0 +1,19 @@
+<h1> Form Page </h1>
+<% if @restaurantpizza.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@restaurantpizza.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+    <ul>
+      <% @restaurantpizza.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @restaurantpizza do |rp| %>
+    Choose an existing Pizza: <%= rp.collection_select(:pizza_id, Pizza.all, :id, :name) %>
+    Choose an existing restaurant: <%= rp.collection_select(:restaurant_id, Restaurant.all, :id, :name) %>
+    Enter your price: <%= rp.number_field :price %>
+    <%= rp.submit %>
+<% end %>

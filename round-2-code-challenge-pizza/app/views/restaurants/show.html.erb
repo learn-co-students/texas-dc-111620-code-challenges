@@ -1,0 +1,7 @@
+<h1> Restaurant Show Page </h1>
+
+Restaurant's Name: <%= @restaurant.name %> <br>
+Restaurant's Address: <%= @restaurant.address %> <br>
+Selling Pizzas: <% @restaurant.pizzas.each do |rp| %>
+    <%= link_to rp.name, pizza_path(rp) %>
+<% end %>

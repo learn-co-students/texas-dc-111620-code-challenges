@@ -8,6 +8,7 @@
 #
 #   1
 Restaurant.destroy_all
+Pizza.destroy_all
  
 restaurants = [{
   name: "Sottocasa NYC",
