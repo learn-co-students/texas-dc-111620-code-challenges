@@ -1,0 +1,7 @@
+<h1>This is the info of <%=@pizza.name%></h1>
+<br>
+<h3>ingredients:</h3>
+<br>
+<%=@pizza.ingredients.each do |ingredient| %>
+    <li><%=ingredient.name%></li>
+<% end %>

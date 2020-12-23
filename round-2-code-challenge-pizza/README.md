@@ -57,8 +57,7 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 Each Restaurant can have many Pizzas and each Pizza can belong to multiple Restaurants. Each Restaurant can set the price of a Pizza to an integer. Update the schema and models to create the RestaurantPizza relationship so that:
 
-- A Pizza can be sold at many Restaurants
-- A Restaurant can sell many Pizzas
+- 
 - RestaurantPizza stores an integer price for each pizza (Remember, each Restaurant can choose how to price its own Pizzas)
 
 ### 2. Pizza Show Page
