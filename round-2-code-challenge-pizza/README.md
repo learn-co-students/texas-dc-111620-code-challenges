@@ -1,4 +1,4 @@
-# Rails Code Challenge - Pizza Restaurants
+ # Rails Code Challenge - Pizza Restaurants
 
 For this assessment, you'll be working with a Pizza Restaurant domain.
 
@@ -55,39 +55,39 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 ### 1. Create the RestaurantPizza Association
 
-Each Restaurant can have many Pizzas and each Pizza can belong to multiple Restaurants. Each Restaurant can set the price of a Pizza to an integer. Update the schema and models to create the RestaurantPizza relationship so that:
+<!-- Each Restaurant can have many Pizzas and each Pizza can belong to multiple Restaurants. Each Restaurant can set the price of a Pizza to an integer. Update the schema and models to create the RestaurantPizza relationship so that:
 
 - A Pizza can be sold at many Restaurants
 - A Restaurant can sell many Pizzas
-- RestaurantPizza stores an integer price for each pizza (Remember, each Restaurant can choose how to price its own Pizzas)
+- RestaurantPizza stores an integer price for each pizza (Remember, each Restaurant can choose how to price its own Pizzas) -->
 
 ### 2. Pizza Show Page
 
-There should be a show page for each Pizza. It should display the name and ingredients.
+<!-- There should be a show page for each Pizza. It should display the name and ingredients. -->
 
 ### 3. Restaurant Show Page
 
-There should be a show page for each Restaurant. It should include:
+<!-- There should be a show page for each Restaurant. It should include:
 
 - the Restaurant's name and address
 - a list of the Pizzas it sells
 
-Each pizza in the list should link to that Pizza's show page.
+Each pizza in the list should link to that Pizza's show page. -->
 
 ### 4. Restaurants Index Page Links
 
-On the Restaurant index page, each Restaurant's name should link to the restaurant's show page.
+<!-- On the Restaurant index page, each Restaurant's name should link to the restaurant's show page. -->
 
 ### 5. RestaurantPizza Form
 
-Add controller actions and views necessary to show a form to associate a Pizza with a Restaurant. The user can:
+<!-- Add controller actions and views necessary to show a form to associate a Pizza with a Restaurant. The user can:
 
 - Choose an existing Pizza from a select dropdown
 - Choose an existing Restaurant from a select dropdown
 - Enter a numeric price
 - Click a button to save the RestaurantPizza association
 
-After submitting, the user should be redirected to the selected Restaurant's show page.
+After submitting, the user should be redirected to the selected Restaurant's show page. -->
 
 ### 6. RestaurantPizza Validation
 

@@ -1,0 +1,18 @@
+<h1><%= @restaurant.name %></h1>
+<br>
+<h1><%= @restaurant.address%></h1>
+<hr>
+
+<%@restaurant.pizzas.each do |pizza|%>
+    <h2><%=link_to pizza.name, pizza_path(pizza)%></h2>
+<%end%>
+
+<%@restaurant.restaurantpizzas.each do |pizza|%>
+    <h2>$<%=pizza.price%></h2>
+    <hr>
+<%end%>
+
+
+
+
+
