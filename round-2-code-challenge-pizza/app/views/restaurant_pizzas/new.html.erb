@@ -1,0 +1,9 @@
+<h1> RestaurantPizza Form</h1>
+<hr>
+<br>
+<%= form_for @restaurant_pizza do |f| %>
+    pizza: <%= f.collection_select :pizza_id, Pizza.all, :id, :name %> <br>
+    restaurant: <%= f.collection_select :restaurant_id, Restaurant.all, :id, :name %> <br>
+    price: <%= f.number_field :price %> <br>
+    <%= f.submit %>
+    <% end %>
