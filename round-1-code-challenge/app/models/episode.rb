@@ -1,2 +1,0 @@
-class Episode < ApplicationRecord
-end
