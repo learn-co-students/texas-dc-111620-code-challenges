@@ -1,0 +1,14 @@
+<h1> Welcome to <%= @restaurant.name%>'s Show Page! </h1> <hr/>
+
+<ul>
+<li><h3>Name: <br><%= @restaurant.name%><h3><br>
+<h3>Address: <br><%= @restaurant.address%><h3></li><br>
+<h3>Pizza Menu: <h3>
+<% @restaurant.pizzas.each do |pizza|%>
+ <li><%= link_to pizza.name, pizza_path(pizza)%></li>
+ <%end%>
+ </ul><br><br>
+
+ <h2>Hungry for more?? </h2>
+ <%=link_to "Place Another Order!", new_restaurant_pizza_path%><br><br>
+ <%= link_to "Browse All Pizzas", pizzas_path%> 

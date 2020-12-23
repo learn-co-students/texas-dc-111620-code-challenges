@@ -8,6 +8,8 @@
 #
 #   1
 Restaurant.destroy_all
+Pizza.destroy_all
+RestaurantPizza.destroy_all 
  
 restaurants = [{
   name: "Sottocasa NYC",
@@ -72,3 +74,8 @@ pizzas = [
 pizzas.each do |p|
   Pizza.create!(p)
 end
+
+#restaurant_pizzas
+RestaurantPizza.create(pizza_id: Pizza.first.id, restaurant_id: Restaurant.first.id, price: 5)
+RestaurantPizza.create(pizza_id: Pizza.second.id, restaurant_id: Restaurant.second.id, price: 10)
+RestaurantPizza.create(pizza_id: Pizza.third.id, restaurant_id: Restaurant.third.id, price: 15)

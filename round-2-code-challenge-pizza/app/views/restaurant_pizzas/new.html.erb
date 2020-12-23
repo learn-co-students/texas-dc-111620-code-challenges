@@ -1,0 +1,23 @@
+<h1> New RestaurantPizza Form </h1> <hr/>
+
+<%if flash[:errors]%>
+<h2> ** Price MUST be between $1-$30** </h2><br>
+<ul>
+    <%flash[:errors].each do |message| %>
+        <li> <%= message %> </li>
+        <%end%>
+    </ul>
+<%end%>
+
+<%= form_for @restaurant_pizza do |f| %>
+    <%= f.label :pizza %> <br>
+    <%= f.collection_select :pizza_id, Pizza.all, :id, :name %>
+
+    <%= f.label :restaurant %> <br>
+    <%= f.collection_select :restaurant_id, Restaurant.all, :id, :name %>
+
+    <%= f.label :price %> <br>
+    <%= f.number_field :price %>
+
+    <%= f.submit %>
+    <%end%>

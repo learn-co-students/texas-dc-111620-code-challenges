@@ -1,0 +1,9 @@
+<h1> Welcome to the Pizza Show Page! </h1><hr/>
+
+<h2>This delicious <%= @pizza.name %> Pizza has the following ingredients: </h2>
+<ul>
+<li> <%=@pizza.ingredients%></li>
+<br><br>
+
+
+<%=link_to "More Pizzas Here!", pizzas_path%>
