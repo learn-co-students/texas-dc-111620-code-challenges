@@ -1,2 +1,0 @@
-class Pizza < ApplicationRecord
-end

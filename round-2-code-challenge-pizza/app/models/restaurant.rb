@@ -1,3 +1,0 @@
-class Restaurant < ApplicationRecord
-  
-end
